@@ -17,7 +17,7 @@ pipeline{
         stage('Application Launch Test'){
             steps{
                 // Запускаем исполняемый файл main из текущего каталога
-                sh './main'
+                sh './prod'
             }
         }
     }
