@@ -1,1 +1,1 @@
-echo "stage3 complete!"
+echo "Pass!"
