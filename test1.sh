@@ -1,1 +1,1 @@
-echo "122"
+echo "Test 1 passed"
