@@ -1,11 +1,22 @@
 pipeline{
     agent any
     stages{
-        stage('Print Info'){
+        stage('Test1'){
             steps{
-                sh 'echo "Branch: $(git rev-parse --abbrev-ref HEAD)"'
-                sh 'echo "Hash: $(git rev-parse HEAD)"'
-                sh 'echo "g++ version: $(g++ --version)"'
+                sh './test1.sh'
+
+            }
+        }
+        stage('Test2'){
+            steps{
+                sh './test2.sh'
+
+            }
+        }
+        stage('Test3'){
+            steps{
+                sh './test3.sh'
+
             }
         }
       }
